@@ -16,5 +16,5 @@ def length_conversion(l): #length given in meter
     return l,cm,inch,foot,yard,mile
 
 
-x = length_conversion(float(input("Set inn meter: ")))
+x = length_conversion(float(input("Sett inn meter: ")))
 print ("%d m tilsvarer: %d cm, %.2f inch, %.2f inch,%.2f yard og %.3f mil" %(x))

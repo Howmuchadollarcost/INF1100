@@ -1,2 +1,2 @@
 # INF1100
-Basic Python Exercises and Shit
+Basic Python Exercises and Examples

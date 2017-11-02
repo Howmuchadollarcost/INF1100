@@ -14,12 +14,12 @@ b)
 for i in q:
     for j in range(len(i)):
         print (j)
-        
+
 print (type(i))
 print(type(j))
 print (type(i[j]))
 
 
 """
-i is lists and j is intefer. i[j] is str.
+i is lists and j is integer. i[j] is str.
 """

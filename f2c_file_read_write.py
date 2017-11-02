@@ -8,6 +8,9 @@ for line in infile:
     c = (f - 32)* 5.0/9
     fdeg.append(f)
     cdeg.append(c)
-print ("f   c")
+outfile = open('new_Fdeg.dat','w')
+outfile.write("  F       C\n")
 for i,j in zip(fdeg,cdeg):
-    print("%2i F - %2.2f C" %(i,j))
+    outfile.write("%2.2f    %2.2f"%(i,j))
+    outfile.write('\n')
+outfile.close()

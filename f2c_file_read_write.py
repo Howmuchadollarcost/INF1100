@@ -1,27 +1,13 @@
-"""
-print("Farenheit to Celsius converter")
-f = int(input("Please enter Farenheit: "))
-
-c = (f - 32)* 5.0/9
-
-print("%i F is %.2f C" %(f,c))
-
-
-import sys
-f = float(sys.argv[1])
-c = (f - 32)* 5.0/9
-
-print("%i F is %.2f C" %(f,c))
-"""
-infile = open('farenheit.txt','r')
-infile.readline()
-infile.readline()
-f = []
+infile = open('Fdeg.dat','r')
+for i in range(3):
+    infile.readline()
+fdeg = []
+cdeg = []
 for line in infile:
-    faren = line.split()
-    f.append(faren[2])
-    number = [float(w) for w in f]
-    f.append(number)
-    no = f[1][0]
+    f = (float(line.split()[-1]))
     c = (f - 32)* 5.0/9
-    print (no)
+    fdeg.append(f)
+    cdeg.append(c)
+print ("f   c")
+for i,j in zip(fdeg,cdeg):
+    print("%2i F - %2.2f C" %(i,j))

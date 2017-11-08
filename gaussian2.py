@@ -6,7 +6,7 @@ def gauss(x,m=0,s=1):
     f = f1*f2
     return f
 
- s
+
 x_min =-5
 x_max = 5
 

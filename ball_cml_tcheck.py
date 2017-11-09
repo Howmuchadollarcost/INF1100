@@ -41,4 +41,3 @@ if 0 <= t <= (2*v0)/(g):
 else:
     print("Time(t) is should be between 0 and %.3f" %(2*v0/g))
     sys.exit(1)
- 
